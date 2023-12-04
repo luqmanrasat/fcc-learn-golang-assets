@@ -2,10 +2,34 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func printPrimes(max int) {
-	// ?
+	for i := 2; i <= max; i++ {
+		if i == 2 {
+			fmt.Println(i)
+			continue
+		}
+
+		if i%2 == 0 {
+			continue
+		}
+
+		isPrime := true
+		for j := 3; float64(j) <= math.Sqrt(float64(i))+1; j++ {
+			if i%j == 0 {
+				isPrime = false
+				break
+			}
+		}
+
+		if !isPrime {
+			continue
+		}
+
+		fmt.Println(i)
+	}
 }
 
 // don't edit below this line
