@@ -3,5 +3,6 @@
   "answers": [
     "To use a struct directly as a key",
     "To nest maps"
-  ]
+  ],
+  "answer": 0
 }

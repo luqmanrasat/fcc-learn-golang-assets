@@ -4,5 +4,6 @@
     "Returns the zero value",
     "Panics",
     "Returns the closest value"
-  ]
+  ],
+  "answer": 0
 }
