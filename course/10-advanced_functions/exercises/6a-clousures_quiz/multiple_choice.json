@@ -3,5 +3,6 @@
   "answers": [
     "a mutable reference to the original value",
     "a copy of the value"
-  ]
+  ],
+  "answer": 0
 }
