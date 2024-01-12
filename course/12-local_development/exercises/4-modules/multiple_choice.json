@@ -5,5 +5,6 @@
     "A library package",
     "An executable main package",
     "A file of Go code"
-  ]
+  ],
+  "answer": 0
 }
