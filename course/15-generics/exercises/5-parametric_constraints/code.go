@@ -4,7 +4,10 @@ import (
 	"fmt"
 )
 
-// ?
+type biller[C customer] interface {
+	Charge(C) bill
+	Name() string
+}
 
 // don't edit below this line
 
@@ -23,8 +26,8 @@ func (ub userBiller) Charge(u user) bill {
 	}
 }
 
-func (sb userBiller) Name() string {
-	return fmt.Sprintf("%s user biller", sb.Plan)
+func (ub userBiller) Name() string {
+	return fmt.Sprintf("%s user biller", ub.Plan)
 }
 
 type orgBiller struct {
